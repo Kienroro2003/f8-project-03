@@ -395,3 +395,15 @@ navbar .header-auth button.btn {
   line-height: 28px;
   color: #575f66;
 }
+
+.ads{
+  background-color: #ff0000;
+}
+
+.ads__heading{
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #10375C;
+}
