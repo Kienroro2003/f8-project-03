@@ -397,13 +397,61 @@ navbar .header-auth button.btn {
 }
 
 .ads{
-  background-color: #ff0000;
+  margin-bottom: 170px;
 }
 
-.ads__heading{
+.ads__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ads .ads__image--block{
+  width: 570px;
+  position: relative;
+}
+
+.ads .ads__image--block img:first-child{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.ads .ads__image--block img:nth-child(2){
+  position: absolute;
+  right:0;
+  bottom: 0;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+  z-index: 99;
+}
+
+.ads .ads__content{
+  padding: 83px 0;
+  width: 470px;
+}
+
+.ads .ads__heading{
   font-weight: 600;
   font-size: 50px;
   line-height: 60px;
   letter-spacing: -0.02em;
   color: #10375C;
+  margin-bottom: 18px;
 }
+
+.ads .ads__desc{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #575F66;
+  margin-bottom: 38px;
+}
+
+
