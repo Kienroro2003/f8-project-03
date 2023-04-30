@@ -13,3 +13,72 @@ body {
   font-size: 1.6rem;
 }
 
+:root {
+  --primary-color: #10375c;
+  --first-color-logo: #2e80ce;
+  --WHITE: #ffffff;
+}
+
+/* Common */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1rem;
+  display: flex;
+}
+
+.logo .logo__circle {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  background-color: var(--first-color-logo);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.logo .logo__circle::before {
+  position: absolute;
+  content: "";
+  width: 1.6em;
+  height: 1.6em;
+  background-color: var(--WHITE);
+  left: 1.1em;
+  bottom: 0.3em;
+  z-index: 11;
+  border-radius: 50%;
+}
+
+.logo .logo__text {
+  margin-left: 0.6em;
+}
+
+.logo .logo__text * {
+  display: block;
+  color: var(--WHITE);
+  line-height: 0.9em;
+  text-align: right;
+}
+
+.logo .logo__text .logo__text-brand:first-child {
+  font-weight: 600;
+  font-size: 2.2em;
+}
+
+.logo .logo__text .logo__text-brand:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
